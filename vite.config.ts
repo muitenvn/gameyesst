@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: './', // Allows hosting under any GitHub Pages subfolder (e.g. username.github.io/repo-name)
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
