@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  body {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #121612;
+    color: #f7eed8;
+    overflow: hidden;
+  }
+}
+
+.font-pixel {
+  font-family: 'VT323', monospace;
+}
+
+/* Crisp pixel art rendering */
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Custom retro scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b201a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5c40;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6a835c;
+}
+
+/* Pixel border style */
+.pixel-box {
+  border: 3px solid #2e261d;
+  box-shadow: inset 2px 2px 0px rgba(255, 255, 255, 0.15), inset -2px -2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.pixel-panel {
+  background-color: #1e1915;
+  border: 3px solid #4a3b2c;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5), inset 2px 2px 0 #735c43, inset -2px -2px 0 #281e14;
+}
+
+.pixel-slot {
+  background-color: #2b221a;
+  border: 2px solid #5a4632;
+  box-shadow: inset 2px 2px 0 rgba(0,0,0,0.5), inset -1px -1px 0 rgba(255,255,255,0.1);
+}
+
+.pixel-slot.active {
+  border-color: #f3c246;
+  background-color: #423525;
+  box-shadow: inset 2px 2px 0 #f9e27d, 0 0 8px rgba(243, 194, 70, 0.5);
+}

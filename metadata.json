@@ -1,0 +1,7 @@
+{
+  "name": "Realm of Terracraft - 2D Pixel Survival Adventure",
+  "description": "A delightful 2D sandbox survival adventure inspired by Terraria and Minecraft. Gather resources, recruit companions, craft weapons, build bases, and battle friendly bosses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
